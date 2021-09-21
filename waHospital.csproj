@@ -15,7 +15,7 @@
     <RootNamespace>waHospital</RootNamespace>
     <AssemblyName>waHospital</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -120,6 +120,7 @@
     <Content Include="dist\assets\libs\bootstrap-datepicker\bootstrap-datepicker.min.js" />
     <Content Include="dist\assets\libs\bootstrap-timepicker\bootstrap-timepicker.min.css" />
     <Content Include="dist\assets\libs\bootstrap-timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="facturacion.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -198,6 +199,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="facturacion.aspx.cs">
+      <DependentUpon>facturacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="facturacion.aspx.designer.cs">
+      <DependentUpon>facturacion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -266,7 +274,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49975</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49975/</IISUrl>
+          <IISUrl>http://localhost/waHospital</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
